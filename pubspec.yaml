@@ -1,23 +1,27 @@
 name: geek_us
 description: "A new Flutter project."
 publish_to: 'none'
-version: 0.1.0
+version: 0.1.0+1
 
 environment:
-  sdk: '>=3.3.2 <4.0.0'
+  sdk: '>=3.3.3 <4.0.0'
 
 dependencies:
   auto_size_text: ^3.0.0
+  bloc: ^8.1.4
   custom_refresh_indicator: ^3.1.0
   dartz: ^0.10.1
+  dio: ^5.4.2+1
   drop_shadow_image: ^0.9.1
   equatable: ^2.0.5
   fast_cached_network_image: ^1.2.9
+  flextras: ^1.0.0
   flutter:
     sdk: flutter
   flutter_animate: ^4.5.0
+  flutter_bloc: ^8.1.5
   flutter_dotenv: ^5.1.0
-  flutter_modular: ^6.3.2
+  flutter_modular: ^6.3.3
   flutter_svg: ^2.0.10+1
   gap: ^3.0.1
   internet_connection_checker_plus: ^2.3.0

@@ -17,6 +17,14 @@ extension Heroic on Widget {
       : this;
 }
 
+extension IconGradient on Icon {
+  Widget gradient(LinearGradient gradient) => ShaderMask(
+        blendMode: BlendMode.srcIn,
+        shaderCallback: (Rect bounds) => gradient.createShader(bounds),
+        child: this,
+      );
+}
+
 extension Shimmer on Widget {
   Widget shim(bool isShimmer) => isShimmer
       ? animate(onPlay: (controller) => controller.repeat()).shimmer(
